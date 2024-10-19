@@ -1,0 +1,19 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: footer_copy
+            field:
+              type: markdown
+              display: 'Footer Copy'
+          -
+            handle: map
+            field:
+              container: assets
+              type: assets
+              display: Map
+              max_files: 1
+              min_files: 1

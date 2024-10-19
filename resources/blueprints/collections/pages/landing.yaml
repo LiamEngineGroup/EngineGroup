@@ -1,0 +1,149 @@
+title: Landing
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              display: Title
+              validate:
+                - required
+          -
+            handle: vimeo_embed
+            field:
+              type: link
+              display: 'Vimeo Embed'
+          -
+            handle: bodycopy
+            field:
+              type: markdown
+              display: 'Body Copy'
+          -
+            handle: cta
+            field:
+              type: text
+              display: cta
+              width: 50
+          -
+            handle: cta_link
+            field:
+              type: link
+              display: 'cta Link'
+              width: 50
+      -
+        display: Work
+        fields:
+          -
+            handle: section_title_work
+            field:
+              type: text
+              display: 'Section Title Work'
+          -
+            handle: work
+            field:
+              type: replicator
+              display: Work
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: work_asset
+                          field:
+                            max_files: 1
+                            min_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Work Asset'
+                        -
+                          handle: work_title
+                          field:
+                            type: text
+                            display: 'Work Title'
+                        -
+                          handle: work_subtitle
+                          field:
+                            type: markdown
+                            display: 'Work Subtitle'
+                        -
+                          handle: work_link
+                          field:
+                            type: link
+                            display: 'Work Link'
+      -
+        display: News
+        fields:
+          -
+            handle: section_title_news
+            field:
+              type: text
+              display: 'Section Title News'
+          -
+            handle: news
+            field:
+              type: replicator
+              display: News
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: news_asset
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'news Asset'
+                            max_files: 1
+                            min_files: 1
+                        -
+                          handle: news_link
+                          field:
+                            type: link
+                            display: 'News Link'
+      -
+        display: Carbon
+        fields:
+          -
+            handle: carbon_asset
+            field:
+              container: assets
+              type: assets
+              display: 'Carbon Asset'
+              max_files: 1
+              min_files: 1
+          -
+            handle: carbon_copy
+            field:
+              type: markdown
+              display: 'Carbon Copy'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

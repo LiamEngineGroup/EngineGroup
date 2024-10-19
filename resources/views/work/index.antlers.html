@@ -1,0 +1,9 @@
+<h1>Blog</h1>
+
+{{ collection:work }}
+    <article>
+        <h2><a href="{{ url }}">{{ title }}</a></h2>
+        <p>{{ excerpt }}</p>
+        <p>Published on: {{ date format="F j, Y" }}</p>
+    </article>
+{{ /collection:work }}

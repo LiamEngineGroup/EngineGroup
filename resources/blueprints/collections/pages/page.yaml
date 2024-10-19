@@ -1,0 +1,78 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+      -
+        display: Work
+        fields:
+          -
+            handle: work
+            field:
+              type: replicator
+              display: Work
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: work_assets
+                          field:
+                            max_files: 1
+                            min_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Work Assets'
+                        -
+                          handle: work_title
+                          field:
+                            type: text
+                            display: 'Work Title'
+                        -
+                          handle: work_subtitle
+                          field:
+                            type: markdown
+                            display: 'Work Subtitle'
+                        -
+                          handle: work_link
+                          field:
+                            type: link
+                            display: 'Work Link'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
