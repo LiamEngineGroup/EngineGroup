@@ -48,9 +48,27 @@ tabs:
                 new_set_group:
                   display: 'New Set Group'
                   sets:
-                    new_set:
-                      display: 'New Set'
-                      fields: {  }
+                    single_image:
+                      display: 'Single Image'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            min_files: 1
+                            container: assets
+                            type: assets
+                            display: Image
+                    video:
+                      display: Video
+                      icon: media-webcam-video
+                      fields:
+                        -
+                          handle: video
+                          field:
+                            type: video
+                            display: Video
   sidebar:
     display: Sidebar
     sections:

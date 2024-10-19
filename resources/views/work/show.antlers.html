@@ -1,5 +1,31 @@
-<article>
-    <h1>{{ title }}</h1>
-    <p>Published on: {{ date format="F j, Y" }}</p>
-    <div>{{ content }}</div>
-</article>
+<div id="imagelibrary" class="px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12 py-32">
+
+    {{ work_content }}
+ 
+    {{ if type == "text" }}
+      <div class="text">
+        {{ text }}
+      </div>
+      {{ /if }}
+   
+    {{ if type == "single_image" }}
+    <div>
+        <img class="object-cover w-full" src="{{ glide :src="image"  fit="crop_focal"}}" alt="{{ image_alt }}" />
+      </div>
+    {{ /if }}
+       
+    {{ if type == "video" }}
+      <div class="aspect-video w-full">
+        {{ if video | is_embeddable }}
+        <!-- Youtube and Vimeo -->
+        <iframe src="{{ video | embed_url }}"></iframe>
+    {{ else }}
+        <!-- Other HTML5 video types -->
+        <video src="{{ video | embed_url }}"></video>
+    {{ /if }}
+      </div>
+    {{ /if }}
+   
+  {{ /work_content }}
+
+</div>

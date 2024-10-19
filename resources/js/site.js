@@ -56,31 +56,3 @@
    // Display the first slide initially
    showSlide(currentSlide);
 });
-
-document.addEventListener('DOMContentLoaded', function () {
- var gray = document.getElementById('Gray');
- 
- window.addEventListener('scroll', function () {
-     if (window.scrollY > 50) {  // Change this value to control when the class is applied
-         gray.classList.remove('fill-white')
-         gray.classList.add('fill-[#ff4713]');
-     } else {
-         gray.classList.add('fill-white')
-         gray.classList.remove('fill-[#ff4713]');
-     }
- });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
- var gray2 = document.getElementById('Gray2');
- 
- window.addEventListener('scroll', function () {
-     if (window.scrollY > 50) {  // Change this value to control when the class is applied
-         gray2.classList.remove('fill-white')
-         gray2.classList.add('fill-[#ff4713]');
-     } else {
-         gray2.classList.add('fill-white')
-         gray2.classList.remove('fill-[#ff4713]');
-     }
- });
-});
