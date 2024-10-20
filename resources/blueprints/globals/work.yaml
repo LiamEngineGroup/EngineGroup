@@ -1,0 +1,42 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Work
+        fields:
+          -
+            handle: work
+            field:
+              type: replicator
+              display: Work
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    work:
+                      display: Work
+                      fields:
+                        -
+                          handle: work_asset
+                          field:
+                            max_files: 1
+                            min_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Work asset'
+                        -
+                          handle: work_title
+                          field:
+                            type: text
+                            display: 'work title'
+                        -
+                          handle: work_subtitle
+                          field:
+                            type: textarea
+                            display: 'work subtitle'
+                        -
+                          handle: work_link
+                          field:
+                            type: link
+                            display: work_link
