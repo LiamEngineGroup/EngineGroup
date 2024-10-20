@@ -3,3 +3,7 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
+
+h1 {
+    font-size: 3rem;
+}

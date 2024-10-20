@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
-        <link rel="stylesheet" href="{{ mix src="/css/tailwind.css" }}">
+        <link rel="stylesheet" href="{{ mix src="/resources/css/tailwind.css" }}">
+        <link rel="stylesheet" href="{{ mix src='/css/site.css' }}">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
    <body id="Top" class="font-sans text-gray-600">

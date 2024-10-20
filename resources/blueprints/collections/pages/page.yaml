@@ -34,13 +34,13 @@ tabs:
                       display: 'New Set'
                       fields:
                         -
-                          handle: work_assets
+                          handle: work_asset
                           field:
                             max_files: 1
                             min_files: 1
                             container: assets
                             type: assets
-                            display: 'Work Assets'
+                            display: 'Work Asset'
                         -
                           handle: work_title
                           field:

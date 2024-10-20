@@ -1,31 +1,27 @@
-<div id="imagelibrary" class="px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12 py-32">
+<div class="py-32 md:mx-auto w-full md:w-4/5 xl:w-3/5 pb-64">
 
     {{ work_content }}
  
     {{ if type == "text" }}
-      <div class="text">
-        {{ text }}
+      <div class="p-3">
+        <p>{{ text }}</p>
       </div>
-      {{ /if }}
    
-    {{ if type == "single_image" }}
+    {{ elseif type == "single_image" }}
     <div>
-        <img class="object-cover w-full" src="{{ glide :src="image"  fit="crop_focal"}}" alt="{{ image_alt }}" />
+        <img class="object-cover p-3 flex {{ align }} {{ width }} {{ aspect_ratio }}" src="{{ glide :src="image"  fit="crop_focal"}}" alt="{{ image_alt }}" />
       </div>
-    {{ /if }}
        
-    {{ if type == "video" }}
-      <div class="aspect-video w-full">
+    {{ elseif type == "video" }}
+      <div class="p-3">
         {{ if video | is_embeddable }}
         <!-- Youtube and Vimeo -->
-        <iframe src="{{ video | embed_url }}"></iframe>
+        <iframe class="w-full aspect-video" src="{{ video | embed_url }}"></iframe>
     {{ else }}
         <!-- Other HTML5 video types -->
-        <video src="{{ video | embed_url }}"></video>
+        <video class="w-full aspect-video" src="{{ video | embed_url }}"></video>
     {{ /if }}
       </div>
-    {{ /if }}
-   
+   {{ /if }}
   {{ /work_content }}
-
 </div>

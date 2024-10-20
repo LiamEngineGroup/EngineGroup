@@ -1,11 +1,11 @@
-<div id="imagelibrary" class="px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12 py-32">
+<div id="imagelibrary" class="px-3 md:px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12 py-32">
     {{ work }}
-    <a class="relative grid items-end aspect-square md:aspect-video object-cover" href="{{ work_link }}">
-        <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase bg-[#ff4713]/40 opacity-0 hover:opacity-100">
-            <h2 class="text-3xl font-bold drop-shadow-lg">{{ work_title }}</h2>
-            <p class="text-xl drop-shadow-lg">{{ work_subtitle }}</p>
+    <a class="relative grid aspect-video object-cover" href="{{ work_link }}">
+        <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase md:bg-[#ff4713]/40 opacity-100 md:opacity-0 md:hover:opacity-100">
+            <h2 class="text-3xl font-bold drop-shadow">{{ work_title }}</h2>
+            <p class="text-xl drop-shadow">{{ work_subtitle }}</p>
         </div>
-        <img class="basis-96 aspect-square md:aspect-video object-cover" src="{{ work_assets }}">
+    <img class="basis-96 aspect-video object-cover" src="{{ work_asset }}">
     </a> 
     {{ /work }}
 </div>

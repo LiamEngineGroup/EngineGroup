@@ -22,6 +22,7 @@ tabs:
             handle: work_content
             field:
               buttons:
+                - h1
                 - h2
                 - h3
                 - bold
@@ -37,16 +38,23 @@ tabs:
                 - aligncenter
                 - alignright
                 - alignjustify
-              save_html: true
+                - underline
+                - strikethrough
+                - superscript
+                - subscript
+                - code
               word_count: true
               remove_empty_nodes: false
               link_noopener: true
               target_blank: true
               type: bard
               display: 'Work Content'
+              enable_input_rules: false
+              enable_paste_rules: false
+              save_html: true
               sets:
-                new_set_group:
-                  display: 'New Set Group'
+                assets:
+                  display: Assets
                   sets:
                     single_image:
                       display: 'Single Image'
@@ -60,6 +68,54 @@ tabs:
                             container: assets
                             type: assets
                             display: Image
+                        -
+                          handle: aspect_ratio
+                          field:
+                            options:
+                              -
+                                key: 'aspect-[3/2]'
+                                value: Landscape
+                              -
+                                key: aspect-square
+                                value: Square
+                              -
+                                key: 'aspect-[3/4]'
+                                value: Portrait
+                            type: radio
+                            display: 'Aspect Ratio'
+                            default: Landscape
+                            width: 33
+                        -
+                          handle: width
+                          field:
+                            options:
+                              -
+                                key: w-2/5
+                                value: Small
+                              -
+                                key: w-1/2
+                                value: Medium
+                              -
+                                key: w-full
+                                value: Large
+                            type: radio
+                            display: Width
+                            default: Large
+                            width: 33
+                        -
+                          handle: align
+                          field:
+                            options:
+                              -
+                                key: float-start
+                                value: Left
+                              -
+                                key: float-end
+                                value: Right
+                            type: radio
+                            display: Align
+                            width: 33
+                            default: Left
                     video:
                       display: Video
                       icon: media-webcam-video

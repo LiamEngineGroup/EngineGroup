@@ -1,5 +1,5 @@
 <div>
-    <div class="w-full aspect-video bg-fixed"><iframe src="{{vimeo_embed}}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" class="w-full aspect-video mt-12 md:mt-0" title="Engine’s Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <div class="w-full aspect-video bg-fixed"><iframe src="{{vimeo_embed}}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" class="w-full aspect-video mt-20 md:mt-0" title="Engine’s Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
 
 <!-- <div class="relative overflow-hidden w-full aspect-video mt-12 sm:mt-0">
@@ -25,36 +25,38 @@
 </div> -->
 
 
-<div id="copy" class="mb-12 md:mb-44 py-24 pl-12 w-5/6 lg:w-1/2 text-balance align-baseline whitespace-normal tracking-tighter">
+<div id="copy" class="mb-12 md:mb-44 py-24 pl-3 md:pl-12 w-5/6 lg:w-1/2 text-balance align-baseline whitespace-normal tracking-tighter">
     <h2 class="text-2xl md:text-3xl">{{ bodycopy }}</h2>
     <a href="{{ cta_link:title }}"><button class="pt-12 text-xl md:text-2xl hover:text-[#ff4713]">{{ cta }}</button></a>
 </div>
 
 
-<h2 class="text-3xl md:text-5xl mt-24 mb-6 pl-12 uppercase font-bold">{{ section_title_work }}</h2>
-<div id="imagelibrary" class="px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12">
+<h2 class="text-3xl md:text-5xl mt-24 mb-6 pl-3 md:pl-12 uppercase font-bold">{{ section_title_work }}</h2>
+<div id="imagelibrary" class=" px-3 md:px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12">
 {{ work }}
-    <a class="relative grid aspect-square md:aspect-video object-cover" href="{{ work_link }}">
-        <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase bg-[#ff4713]/40 opacity-0 hover:opacity-100">
-            <h2 class="text-3xl font-bold drop-shadow-lg">{{ work_title }}</h2>
-            <p class="text-xl drop-shadow-lg">{{ work_subtitle }}</p>
+    <a class="relative grid aspect-video object-cover" href="{{ work_link }}">
+        <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase md:bg-[#ff4713]/40 opacity-100 md:opacity-0 md:hover:opacity-100">
+            <h2 class="text-3xl font-bold drop-shadow">{{ work_title }}</h2>
+            <p class="text-xl drop-shadow">{{ work_subtitle }}</p>
         </div>
-    <img class="basis-96 aspect-square md:aspect-video object-cover" src="{{ work_asset }}">
+    <img class="basis-96 aspect-video object-cover" src="{{ work_asset }}">
     </a> 
     {{ /work }}
 </div>
 
 
-<h2 class="text-3xl md:text-5xl mt-24 mb-6 pl-12 uppercase font-bold">{{ section_title_news }}</h2>
-<div id="news" class="px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12">
+<h2 class="text-3xl md:text-5xl mt-24 mb-6 pl-3 md:pl-12 uppercase font-bold">{{ section_title_news }}</h2>
+<div id="news" class="px-3 md:px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12">
     {{ news }}
-    <a class="relative grid items-end aspect-square md:aspect-video object-cover hover:ring-4 hover:ring-[#ff4713] hover:ring-offset-0" href="{{ news_link:slug }}">
-        <img class="z-10 md:z-30 hover:z-10 basis-96 aspect-square md:aspect-video object-cover" src="{{ news_asset }}">
+    <a class="relative grid aspect-video object-cover" href="{{ news_link }}">
+        <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase md:bg-[#ff4713]/40 opacity-100 md:opacity-0 md:hover:opacity-100 ">
+        </div>
+    <img class="basis-96 aspect-video object-cover" src="{{ news_asset }}">
     </a> 
     {{ /news }}
 </div>
 
-<div id="carbon" class="text-center grid my-24 mx-auto w-full md:w-2/5 justify-items-center gap-6">
+<div id="carbon" class="text-center grid my-24 px-3 md:mx-auto w-full md:w-2/5 justify-items-center gap-6">
     <img class="w-52" src="{{ carbon_asset }}" alt="{{ carbon_asset_alt }}">
     <p class="text-lg text-[#343434] text-balance">{{ carbon_copy }}</p>
 </div>
