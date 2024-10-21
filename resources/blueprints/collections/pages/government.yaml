@@ -1,4 +1,4 @@
-title: Landing
+title: Government
 tabs:
   main:
     display: Main
@@ -10,47 +10,81 @@ tabs:
             field:
               type: text
               required: true
-              display: Title
               validate:
                 - required
+          -
+            handle: page_title
+            field:
+              type: text
+              display: 'Page Title'
           -
             handle: vimeo_embed
             field:
               type: link
               display: 'Vimeo Embed'
           -
+            handle: template
+            field:
+              type: template
+              display: Template
+          -
             handle: bodycopy
             field:
               type: markdown
-              display: 'Body Copy'
+              display: BodyCopy
           -
             handle: cta
             field:
               type: text
-              display: cta
+              display: CTA
               width: 50
           -
             handle: cta_link
             field:
               type: link
-              display: 'cta Link'
+              display: 'CTA Link'
               width: 50
       -
-        display: Carbon
+        display: Showcase
         fields:
           -
-            handle: carbon_asset
+            handle: showcase_title
+            field:
+              type: text
+              display: 'ShowCase Title'
+          -
+            handle: showcase_gif
             field:
               container: assets
               type: assets
-              display: 'Carbon Asset'
+              display: 'Showcase Gif'
               max_files: 1
               min_files: 1
           -
-            handle: carbon_copy
+            handle: showcase_book
             field:
-              type: markdown
-              display: 'Carbon Copy'
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Showcase Book'
+          -
+            handle: book_copy
+            field:
+              type: text
+              display: 'Book Copy'
+          -
+            handle: cta_s
+            field:
+              type: text
+              display: CTA
+              width: 50
+          -
+            handle: cta_s_link
+            field:
+              type: link
+              display: CTA
+              width: 50
   sidebar:
     display: Sidebar
     sections:

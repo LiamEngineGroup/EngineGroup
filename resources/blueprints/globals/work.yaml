@@ -3,13 +3,13 @@ tabs:
     display: Main
     sections:
       -
-        display: Work
+        display: Work_Global
         fields:
           -
-            handle: work
+            handle: work_global
             field:
               type: replicator
-              display: Work
+              display: 'Work Global'
               sets:
                 new_set_group:
                   display: 'New Set Group'

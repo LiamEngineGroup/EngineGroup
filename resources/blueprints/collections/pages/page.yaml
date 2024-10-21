@@ -18,44 +18,6 @@ tabs:
               type: template
               display: Template
               localizable: true
-      -
-        display: Work
-        fields:
-          -
-            handle: work
-            field:
-              type: replicator
-              display: Work
-              sets:
-                new_set_group:
-                  display: 'New Set Group'
-                  sets:
-                    new_set:
-                      display: 'New Set'
-                      fields:
-                        -
-                          handle: work_asset
-                          field:
-                            max_files: 1
-                            min_files: 1
-                            container: assets
-                            type: assets
-                            display: 'Work Asset'
-                        -
-                          handle: work_title
-                          field:
-                            type: text
-                            display: 'Work Title'
-                        -
-                          handle: work_subtitle
-                          field:
-                            type: markdown
-                            display: 'Work Subtitle'
-                        -
-                          handle: work_link
-                          field:
-                            type: link
-                            display: 'Work Link'
   sidebar:
     display: Sidebar
     sections:

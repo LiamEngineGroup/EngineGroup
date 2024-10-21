@@ -1,9 +1,6 @@
-title: Work
-template: work/show
+title: News
+template: news/show
 layout: layout
-mount: a5f0d6d5-53a4-42f7-a714-36fe41c931f8
-taxonomies:
-  - tags
 revisions: false
 route: '/{mount}/{slug}'
 sort_dir: asc

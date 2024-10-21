@@ -1,45 +1,41 @@
-title: Work
+title: News
 tabs:
   main:
     display: Main
     sections:
       -
+        display: 'New Section'
         fields:
           -
             handle: title
             field:
               type: text
               required: true
-              validate:
-                - required
           -
-            handle: work_title
+            handle: news_title
             field:
               type: text
-              validate:
-                - required
-              display: 'Work Title'
+              display: 'News Title'
           -
-            handle: work_asset
+            handle: news_subtitle
+            field:
+              type: textarea
+              display: 'News Subtitle'
+          -
+            handle: news_asset
             field:
               max_files: 1
               min_files: 1
               container: assets
               type: assets
-              display: Work_Asset
-          -
-            handle: work_subtitle
-            field:
-              type: textarea
-              display: 'Work Subtitle'
+              display: 'News Asset'
           -
             handle: template
             field:
               type: template
               display: Template
-              localizable: true
           -
-            handle: work_content
+            handle: news_content
             field:
               buttons:
                 - h1
@@ -63,15 +59,15 @@ tabs:
                 - superscript
                 - subscript
                 - code
+              save_html: true
               word_count: true
+              enable_input_rules: false
+              enable_paste_rules: false
               remove_empty_nodes: false
               link_noopener: true
               target_blank: true
               type: bard
-              display: 'Work Content'
-              enable_input_rules: false
-              enable_paste_rules: false
-              save_html: true
+              display: 'News Content'
               sets:
                 assets:
                   display: Assets
@@ -101,9 +97,9 @@ tabs:
                               -
                                 key: 'aspect-[3/4]'
                                 value: Portrait
+                            default: Landscape
                             type: radio
                             display: 'Aspect Ratio'
-                            default: Landscape
                             width: 33
                         -
                           handle: width
@@ -118,9 +114,9 @@ tabs:
                               -
                                 key: w-full
                                 value: Large
+                            default: Large
                             type: radio
                             display: Width
-                            default: Large
                             width: 33
                         -
                           handle: align
@@ -132,16 +128,16 @@ tabs:
                               -
                                 key: float-end
                                 value: Right
+                            default: Left
                             type: radio
                             display: Align
                             width: 33
-                            default: Left
                     video:
                       display: Video
                       icon: media-webcam-video
                       fields:
                         -
-                          handle: video
+                          handle: video_field
                           field:
                             type: video
                             display: Video

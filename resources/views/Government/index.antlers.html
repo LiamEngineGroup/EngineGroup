@@ -1,0 +1,43 @@
+<div>
+    <div class="w-full aspect-video bg-fixed"><iframe src="{{vimeo_embed}}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" class="w-full aspect-video mt-20 md:mt-0" title="Engine’s Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+
+<div id="copy" class="mb-12 md:mb-44 py-24 pl-3 md:pl-12 w-5/6 lg:w-1/2 text-balance align-baseline whitespace-normal tracking-tighter">
+    <h2 class="text-xl md:text-2xl">{{ bodycopy }}</h2>
+    <a href="{{ cta_link:title }}"><button class="pt-12 text-xl md:text-2xl hover:text-[#ff4713]">{{ cta }}</button></a>
+</div>
+
+<div class="pb-24">
+    <h2 class="text-3xl md:text-5xl mb-6 pl-3 md:pl-12 uppercase font-bold">{{ title }}</h2>
+    <div id="imagelibrary" class="px-3 md:px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {{ collection:work taxonomy:tags="gov" }}
+             <a class="relative grid" href="{{ url }}">
+                 <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase md:bg-[#ff4713]/40 opacity-100 md:opacity-0 md:hover:opacity-100">
+                <h2 class="text-3xl font-bold drop-shadow">{{ work_title }}</h2>
+                <p class="text-xl drop-shadow">{{ work_subtitle }}</p>
+            </div>
+            <img class="aspect-video" src="{{ glide :src="work_asset" fit="crop_focal" }}">
+            </a> 
+            {{ /collection:work }}
+    </div>
+</div>
+
+<h2 class="text-3xl md:text-5xl mb-6 pl-3 md:pl-12 uppercase font-bold">{{ showcase_title }}</h2>
+<img class="w-full px-3 py-6 md:p-12" src="{{ showcase_gif }}" alt="{{ showcase_gif_alt }}">
+
+<div class="flex flex-col md:flex-row w-full xl:w-4/5 mx-auto text-center justify-center items-center mb-24">
+    <div class="w-full md:w-1/2 flex -ml-28 md:ml-0 justify-center">
+        <img class="w-1/2" src="{{ showcase_book }}" alt="{{ showcase_book_alt }}">
+    </div>
+    <div class="w-full md:w-1/2 flex">
+        <div class="flex flex-col items-center gap-12">
+            <h2 class="text-xl md:text-2xl font-bold w-3/4">{{ book_copy }}</h2>
+            <button class="w-fit py-2 px-8 text-white rounded-2xl bg-gradient-to-r from-[#ff4713] to-[#ff8113] hover:scale-105 transition duration-300 ease-in-out">
+                <a class="" href="{{ cta_s_link }}">
+                    <h2 class="text-xl md:text-2xl font-bold">{{ cta_s }}</h2>
+                </a>
+            </button>
+        </div>
+    </div>
+</div>
+

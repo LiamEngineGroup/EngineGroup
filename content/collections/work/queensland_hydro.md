@@ -5,8 +5,18 @@ title: 'QLD Hydro'
 author: e6336270-7767-41fa-94c4-aed1c9d2d5c7
 template: work/show
 updated_by: e6336270-7767-41fa-94c4-aed1c9d2d5c7
-updated_at: 1729421587
+updated_at: 1729475194
 work_content:
+  -
+    type: set
+    attrs:
+      id: m2icv8cj
+      values:
+        type: single_image
+        image: qhy_heroimage_1280x720.jpg
+        aspect_ratio: 'aspect-[3/2]'
+        width: w-1/2
+        align: float-start
   -
     type: heading
     attrs:
@@ -54,16 +64,6 @@ work_content:
   -
     type: set
     attrs:
-      id: m2h4vfwm
-      values:
-        type: single_image
-        image: qhy_heroimage_1280x720.jpg
-        aspect_ratio: 'aspect-[3/2]'
-        width: w-1/2
-        align: float-start
-  -
-    type: set
-    attrs:
       id: m2g4itan
       values:
         type: video
@@ -72,5 +72,10 @@ work_content:
     type: paragraph
     attrs:
       textAlign: left
+work_title: 'Queensland Hydro'
+work_asset: qhy_heroimage_1280x720.jpg
+work_subtitle: 'Hydro is How'
+tags:
+  - gov
 ---
 work content

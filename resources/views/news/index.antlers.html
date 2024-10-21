@@ -1,14 +1,14 @@
 <div class="py-32">
     <h2 class="text-3xl md:text-5xl mb-6 pl-3 md:pl-12 uppercase font-bold">{{ title }}</h2>
     <div class="px-3 md:px-12 z-0 grid grid-row md:grid-cols-2 lg:grid-cols-3 gap-12">
-    {{ collection:work }}
+    {{ collection:news }}
         <a class="relative grid aspect-video object-cover" href="{{ url }}">
             <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase md:bg-[#ff4713]/40 opacity-100 md:opacity-0 md:hover:opacity-100">
-                <h2 class="text-3xl font-bold drop-shadow">{{ work_title }}</h2>
-                <p class="text-xl drop-shadow">{{ work_subtitle }}</p>
+                <h2 class="text-3xl font-bold drop-shadow">{{ news_title }}</h2>
+                <p class="text-xl drop-shadow">{{ news_subtitle }}</p>
             </div>
-        <img class="basis-96 aspect-video object-cover" src="{{ work_asset }}">
+            <img class="basis-96 aspect-video object-cover" src="{{ glide :src="news_asset" fit="crop_focal" }}">
         </a> 
-    {{ /collection:work }}
+    {{ /collection:news }}
 </div>
 </div>
