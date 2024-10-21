@@ -5,7 +5,7 @@ title: 'QLD Hydro'
 author: e6336270-7767-41fa-94c4-aed1c9d2d5c7
 template: work/show
 updated_by: e6336270-7767-41fa-94c4-aed1c9d2d5c7
-updated_at: 1729475194
+updated_at: 1729492269
 work_content:
   -
     type: set
@@ -68,6 +68,36 @@ work_content:
       values:
         type: video
         video: 'https://vimeo.com/952946465'
+  -
+    type: set
+    attrs:
+      id: m2ilzppx
+      values:
+        type: gallery
+        gallery:
+          -
+            id: m2ilzt4k
+            gallery_image: 'la_linkedin-post[100].jpg'
+            type: gallery_image
+            enabled: true
+            aspect_ratio: 'aspect-[3/2]'
+          -
+            id: m2ilzy2b
+            gallery_image: desbt_thumbnail_754x366.jpg
+            type: gallery_image
+            enabled: true
+            aspect_ratio: 'aspect-[3/2]'
+          -
+            id: m2im02la
+            gallery_image: book.gif
+            type: gallery_image
+            enabled: true
+            aspect_ratio: 'aspect-[3/2]'
+          -
+            id: m2im0m3l
+            video: 'https://vimeo.com/1017752595'
+            type: video
+            enabled: true
   -
     type: paragraph
     attrs:

@@ -1,27 +1,8 @@
-<div class="py-32 md:mx-auto w-full md:w-4/5 xl:w-3/5 pb-64">
+<div class="py-32 md:mx-auto w-full md:w-4/5 xl:w-3/5 mb-96">
   <h2 class="text-3xl md:text-5xl mb-6 uppercase font-bold">{{ work_title }}</h2>
     {{ work_content }}
  
-    {{ if type == "text" }}
-      <div class="p-3">
-        <p>{{ text }}</p>
-      </div>
-   
-    {{ elseif type == "single_image" }}
-    <div>
-        <img class="object-cover p-3 flex {{ align }} {{ width }} {{ aspect_ratio }}" src="{{ glide :src="image"  fit="crop_focal"}}" alt="{{ image_alt }}" />
-      </div>
-       
-    {{ elseif type == "video" }}
-      <div class="p-3">
-        {{ if video | is_embeddable }}
-        <!-- Youtube and Vimeo -->
-        <iframe class="w-full aspect-video" src="{{ video | embed_url }}"></iframe>
-    {{ else }}
-        <!-- Other HTML5 video types -->
-        <video class="w-full aspect-video" src="{{ video | embed_url }}"></video>
-    {{ /if }}
-      </div>
-   {{ /if }}
+      {{ partial src="sets/{type}" }}
+
   {{ /work_content }}
 </div>

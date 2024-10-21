@@ -145,6 +145,53 @@ tabs:
                           field:
                             type: video
                             display: Video
+                    gallery:
+                      display: Gallery
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          handle: gallery
+                          field:
+                            type: replicator
+                            display: Gallery
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  gallery_image:
+                                    display: 'Gallery Image'
+                                    icon: media-image-picture-gallery
+                                    fields:
+                                      -
+                                        handle: gallery_image
+                                        field:
+                                          max_files: 1
+                                          min_files: 1
+                                          container: assets
+                                          type: assets
+                                          display: Gallery_image
+                                      -
+                                        handle: aspect_ratio
+                                        field:
+                                          options:
+                                            -
+                                              key: 'aspect-[3/2]'
+                                              value: Portrait
+                                            -
+                                              key: 'aspect-[3/4]'
+                                              value: Landscape
+                                          default: Landscape
+                                          type: radio
+                                          display: 'Aspect Ratio'
+                                  video:
+                                    display: Video
+                                    icon: media-webcam-video
+                                    fields:
+                                      -
+                                        handle: video
+                                        field:
+                                          type: video
+                                          display: Video
   sidebar:
     display: Sidebar
     sections:
@@ -156,3 +203,11 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+          -
+            handle: tags
+            field:
+              type: terms
+              taxonomies:
+                - tags
+              display: Tags
+              mode: select
