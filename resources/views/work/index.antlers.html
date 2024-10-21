@@ -7,7 +7,7 @@
                 <h2 class="text-3xl font-bold drop-shadow">{{ work_title }}</h2>
                 <p class="text-xl drop-shadow">{{ work_subtitle }}</p>
             </div>
-        <img class="basis-96 aspect-video object-cover" src="{{ work_asset }}">
+            <img class="basis-96 aspect-video object-cover" src="{{ glide :src="work_asset" fit="crop_focal" }}">
         </a> 
     {{ /collection:work }}
 </div>
