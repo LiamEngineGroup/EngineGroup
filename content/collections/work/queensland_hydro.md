@@ -5,7 +5,7 @@ title: 'QLD Hydro'
 author: e6336270-7767-41fa-94c4-aed1c9d2d5c7
 template: work/show
 updated_by: e6336270-7767-41fa-94c4-aed1c9d2d5c7
-updated_at: 1729492269
+updated_at: 1729678727
 work_content:
   -
     type: set
@@ -38,10 +38,6 @@ work_content:
         type: text
         text: 'To create further awareness of Queensland Hydro and educate the public about the vital role pumped hydro energy storage has to play in Queensland’s clean energy future.'
   -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
     type: heading
     attrs:
       textAlign: left
@@ -71,32 +67,34 @@ work_content:
   -
     type: set
     attrs:
-      id: m2ilzppx
+      id: m2lg6he5
       values:
-        type: gallery
-        gallery:
+        type: slide
+        slide_image:
           -
-            id: m2ilzt4k
-            gallery_image: 'la_linkedin-post[100].jpg'
-            type: gallery_image
+            id: m2lg6igr
+            slide_image: desbt_thumbnail_754x366.jpg
+            type: new_set
             enabled: true
-            aspect_ratio: 'aspect-[3/2]'
           -
-            id: m2ilzy2b
-            gallery_image: desbt_thumbnail_754x366.jpg
-            type: gallery_image
+            id: m2lg6lxo
+            slide_image: sth_thumbnail_754x366.jpg
+            type: new_set
             enabled: true
-            aspect_ratio: 'aspect-[3/2]'
           -
-            id: m2im02la
-            gallery_image: book.gif
-            type: gallery_image
+            id: m2lg6otb
+            slide_image: une_sl_thumbnail_754x366.jpg
+            type: new_set
             enabled: true
-            aspect_ratio: 'aspect-[3/2]'
           -
-            id: m2im0m3l
-            video: 'https://vimeo.com/1017752595'
-            type: video
+            id: m2lgf4lb
+            slide_image: seq_thumbnail_754x366.jpg
+            type: new_set
+            enabled: true
+          -
+            id: m2lgfcpc
+            slide_image: f341963c9caf140617095e.webp
+            type: new_set
             enabled: true
   -
     type: paragraph

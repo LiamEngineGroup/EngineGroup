@@ -1,0 +1,13 @@
+<div class="p-3">
+    <div class="slideshow-container relative w-full aspect-video overflow-hidden bg-gray-300">
+        {{ slide_image }}
+        <div class="slide absolute w-full h-full opacity-0 transition-opacity duration-700 ease-in-out">
+            <img src="{{ slide_image }}" class="w-full h-full object-contain" alt="Slide {{ loop.index }}">
+        </div>
+        {{ /slide_image }}
+    
+        <!-- Navigation buttons -->
+        <button class="prev absolute text-3xl md:text-5xl px-2 md:px-6 h-full left-0 top-1/2 transform -translate-y-1/2 text-[#ff4713] backdrop-blur-sm bg-white/50 p-3">&#10094;</button>
+        <button class="next absolute text-3xl md:text-5xl px-2 md:px-6 h-full right-0 top-1/2 transform -translate-y-1/2 text-[#ff4713] backdrop-blur-sm bg-white/50 p-3">&#10095;</button>
+    </div>
+</div>

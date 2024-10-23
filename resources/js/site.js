@@ -19,40 +19,27 @@
    closeButton.classList.toggle('hidden');
  });
 
- document.addEventListener('DOMContentLoaded', function () {
-   const slides = document.querySelectorAll('.slide');
-   let currentSlide = 0;
-   const slideInterval = 7000; // 7 seconds between slides
+document.addEventListener('DOMContentLoaded', function () {
+    let slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    let totalSlides = slides.length;
 
-   // Function to show the current slide
-   function showSlide(index) {
-       slides.forEach((slide, i) => {
-           if (i === index) {
-               slide.classList.add('active');
-           } else {
-               slide.classList.remove('active');
-           }
-       });
-   }
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? '1' : '0';
+        });
+    }
 
-   // Next button functionality
-   document.getElementById('next').addEventListener('click', function() {
-       currentSlide = (currentSlide + 1) % slides.length; // Move forward in slides
-       showSlide(currentSlide);
-   });
+    document.querySelector('.next').addEventListener('click', function () {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    });
 
-   // Previous button functionality
-   document.getElementById('prev').addEventListener('click', function() {
-       currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Move backward in slides
-       showSlide(currentSlide);
-   });
+    document.querySelector('.prev').addEventListener('click', function () {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    });
 
-   // Auto-rotation every 3 seconds
-   setInterval(function() {
-       currentSlide = (currentSlide + 1) % slides.length;
-       showSlide(currentSlide);
-   }, slideInterval);
-
-   // Display the first slide initially
-   showSlide(currentSlide);
+    // Initialize the first slide
+    showSlide(currentSlide);
 });
