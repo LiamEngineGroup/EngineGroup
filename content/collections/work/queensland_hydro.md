@@ -5,7 +5,7 @@ title: 'QLD Hydro'
 author: e6336270-7767-41fa-94c4-aed1c9d2d5c7
 template: work/show
 updated_by: e6336270-7767-41fa-94c4-aed1c9d2d5c7
-updated_at: 1729678727
+updated_at: 1729818214
 work_content:
   -
     type: set
@@ -105,5 +105,6 @@ work_asset: qhy_heroimage_1280x720.jpg
 work_subtitle: 'Hydro is How'
 tags:
   - gov
+feature_image: 'qhy0005_mum-&-son-swimming_v2.jpg'
 ---
 work content

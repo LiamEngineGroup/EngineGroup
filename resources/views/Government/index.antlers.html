@@ -2,7 +2,7 @@
     <div class="w-full aspect-video bg-fixed"><iframe src="{{vimeo_embed}}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" class="w-full aspect-video mt-20 md:mt-0" title="Engine’s Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
 
-<div id="copy" class="mb-12 md:mb-44 py-24 pl-3 md:pl-12 w-5/6 lg:w-1/2 text-balance align-baseline whitespace-normal tracking-tighter">
+<div id="copy" class="mb-12 md:mb-44 py-24 pl-3 md:pl-12 w-5/6 lg:w-1/2 text-balance align-baseline whitespace-pre tracking-tighter">
     <h2 class="text-xl md:text-2xl">{{ bodycopy }}</h2>
     <a href="{{ cta_link:title }}"><button class="pt-12 text-xl md:text-2xl hover:text-[#ff4713]">{{ cta }}</button></a>
 </div>
@@ -17,8 +17,8 @@
                 <p class="text-xl drop-shadow">{{ work_subtitle }}</p>
             </div>
             <img class="aspect-video" src="{{ glide :src="work_asset" fit="crop_focal" }}">
-            </a> 
-            {{ /collection:work }}
+            </a>
+        {{ /collection:work }}
     </div>
 </div>
 

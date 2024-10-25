@@ -1,6 +1,8 @@
 <div class="py-32 md:mx-auto w-full md:w-4/5 xl:w-3/5 pb-64">
-    <h2 class="text-3xl md:text-5xl mb-6 uppercase font-bold">{{ news_title }}</h2>
+    <h2 class="text-3xl pl-3 md:text-5xl mb-6 uppercase font-bold">{{ news_title }}</h2>
       {{ news_content }}
+
        {{ partial src="sets/{type}" }}
+
     {{ /news_content }}
   </div>

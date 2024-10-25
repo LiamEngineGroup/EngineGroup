@@ -68,7 +68,14 @@ carbon_copy: |-
 
   We acknowledge the Traditional Owners of the land where we live and work. We pay our respect to Elders past, present and emerging and extend that respect to all Aboriginal and Torres Strait Islander People.
 updated_by: e6336270-7767-41fa-94c4-aed1c9d2d5c7
-updated_at: 1729486237
+updated_at: 1729816601
 section: work/show
 template_field: work/index
+feature_image_1: sth_thumbnail_754x366.jpg
+feature_image_2: qhy_heroimage_1280x720.jpg
+feature_image_3: qhy_thumbnail_754x366.jpg
+our_way: |-
+  If it’s out of your hands, grab it. If you don’t like what’s on, change the channel. To turn your back is to let someone else write the script. To have the strength of mind to face the music...that’s when you get to dance. Life is what you make it.
+
+  _**Let’s make tomorrow better than today.**_
 ---

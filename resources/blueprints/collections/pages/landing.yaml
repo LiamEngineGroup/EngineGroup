@@ -51,6 +51,47 @@ tabs:
             field:
               type: markdown
               display: 'Carbon Copy'
+      -
+        display: 'Feature Image 1'
+        fields:
+          -
+            handle: feature_image_1
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Feature Image 1'
+      -
+        display: 'Feature Image 2'
+        fields:
+          -
+            handle: feature_image_2
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Feature Image 2'
+      -
+        display: 'Feature Image 3'
+        fields:
+          -
+            handle: feature_image_3
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Feature Image 3'
+      -
+        display: 'Our Way'
+        fields:
+          -
+            handle: our_way
+            field:
+              type: markdown
+              display: 'Our Way'
   sidebar:
     display: Sidebar
     sections:

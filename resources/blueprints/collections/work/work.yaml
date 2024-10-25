@@ -6,6 +6,14 @@ tabs:
       -
         fields:
           -
+            handle: feature_image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: 'Feature Image'
+          -
             handle: title
             field:
               type: text

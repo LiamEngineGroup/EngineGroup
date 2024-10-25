@@ -1,6 +1,7 @@
 title: News
 template: news/show
 layout: layout
+mount: 41f9e185-62ac-4da3-bc54-88b72a73615a
 revisions: false
 route: '/{mount}/{slug}'
 sort_dir: asc

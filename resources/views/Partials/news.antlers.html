@@ -1,0 +1,9 @@
+{{ collection:news }}
+<a class="relative grid aspect-video object-cover" href="{{ url }}">
+    <div class="absolute transition duration-0 hover:duration-300 ease-in-out content-end w-full h-full p-4 md:p-6 text-white uppercase md:bg-[#ff4713]/40 opacity-100 md:opacity-0 md:hover:opacity-100">
+        <h2 class="text-3xl font-bold drop-shadow">{{ news_title }}</h2>
+        <p class="text-xl drop-shadow">{{ news_subtitle }}</p>
+    </div>
+<img class="basis-96 aspect-video object-cover" src="{{ news_asset }}">
+</a> 
+{{ /collection:news }}
