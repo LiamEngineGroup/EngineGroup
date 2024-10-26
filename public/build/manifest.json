@@ -1,0 +1,17 @@
+{
+  "resources/css/site.css": {
+    "file": "assets/site-BELvo2Fm.css",
+    "src": "resources/css/site.css",
+    "isEntry": true
+  },
+  "resources/fonts/HandBook.otf": {
+    "file": "assets/HandBook--suNff8d.otf",
+    "src": "resources/fonts/HandBook.otf"
+  },
+  "resources/js/site.js": {
+    "file": "assets/site-Cy-x1BCA.js",
+    "name": "site",
+    "src": "resources/js/site.js",
+    "isEntry": true
+  }
+}
